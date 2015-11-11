@@ -19,7 +19,7 @@ nav {
 }
 
 .brand {
-	font-family: 'loveloblack';
+	font-family: 'loveloblack', serif;
 }
 .brand span {
 	color: orange;
@@ -39,7 +39,7 @@ nav > div {
 }
 
 nav a {
-	font-family: 'loveloblack';
+	font-family: 'loveloblack', serif;
 	color: #f7efed;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -77,7 +77,7 @@ body.full-video, .gallery-item {
 }
 
 body.faq {
-	padding-top: 80px;
+	padding-top: 50px;
 }
 #main .video-overlay:before {
 	position: fixed;
@@ -102,14 +102,14 @@ body.faq {
 	z-index: 1;
 	margin: auto;
 	width: 70%;
-	height: 600;
+	height: 600px;
 }
 
 .overlay-content h1{
 	font-size: 35px;
 	text-transform: uppercase;
 	text-align: center;
-	font-family: 'loveloblack';
+	font-family: 'loveloblack', serif;
 	margin-top: 15px;
 }
 
@@ -207,52 +207,52 @@ body.faq {
 }
 
 .media-page #main {
-	padding-top: 80px;
+	padding-top: 40px;
 }
 
 .Accordion {
-	font-family: Helvetica;
-	border-left: solid 0px gray;
-	border-right: solid 0px black;
-	border-bottom: solid 0px gray;
+	font-family: Helvetica, serif;
+	border-left: solid 0 gray;
+	border-right: solid 0 black;
+	border-bottom: solid 0 gray;
 	overflow: hidden;
 }
 
 .AccordionPanel {
 	margin: 0;
-	padding: 0px;
+	padding: 0;
 }
 
 .AccordionPanelTab {
 	border: 0;
 	margin: 0;
-	padding: 0px;
 	cursor: pointer;
 	color: #fff;
 	-moz-user-select: none;
-	-khtml-user-select: none;
 	font-size: 17px;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 20px;
+	padding: 13px;
 	transition: all ease-in 0.5s;
 }
 
 .AccordionPanelContent {
 	overflow: auto;
-	margin: 0px;
+	margin: 0;
 	padding: 20px;
 	background: #f7efed;
 	text-align: center;
 	font-family: Garamond, sans-serif;
 	font-size: 22px;
-	height: 100px !important;
+	min-height: 100px !important;
+	height: auto;
 	display: block !important;
 	box-sizing: border-box;
 	transition: all ease-in 0.5s;
 }
 .AccordionPanelClosed .AccordionPanelContent  {
-	height: 0px !important;
+	min-height: 0 !important;
+	height: 0 !important;
 	transition: all ease-in 0.5s;
 	padding: 0;
 }
@@ -275,7 +275,7 @@ body.faq {
 
 .faq-title {
 	text-transform: uppercase;
-	font-family: Helvetica;
+	font-family: Helvetica, serif;
 	text-align: center;
 	color: white;
 }
@@ -294,7 +294,7 @@ body.faq {
 
 }
 #contact-details h3{
-	font-family: Helvetica;
+	font-family: Helvetica, serif;
 	font-size: 18px;
 	margin: 12px;
 	color: #fff;
@@ -325,9 +325,12 @@ body.faq {
   }
 }
 
-@media(min-width: 1366px) {
+@media(min-width: 1367px) {
 	.gallery-item img.landscape {
 		margin-top: -60px;
+	}
+	.media-page #main, body.faq {
+		padding-top: 60px;
 	}
 }
 
@@ -335,4 +338,10 @@ body.faq {
 	.gallery-item img.landscape {
 		margin-top: -80px;
 	}
+
+	.media-page #main, body.faq {
+		padding-top: 80px;
+	}
+
+
 }
