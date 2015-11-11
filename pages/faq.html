@@ -2,27 +2,104 @@
     <head>
         <title>THATMOMENT - FAQ</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/stylesheet.css">
+
     </head>
-    <body>
-        <nav>
+    <body class="faq">
+        <nav class="top">
+            <a href="../index.html" title="THATMOMENT" class="brand"><span>THAT</span>MOMENT</a>
+        </nav>
+        <nav class="bottom">
             <div>
                 <a href="../index.html" title="Home">Home</a>
                 <a href="about.html" title="About">About</a>
                 <a href="gallery.html" title="Gallery">Gallery</a>
                 <a href="media.html" title="Media">Media</a>
-                <a href="faq.html" title="FAQ">FAQ</a>
+                <a href="faq.html" class="active" title="FAQ">FAQ</a>
                 <a href="contact.html" title="Contact">Contact</a>            
                 <div class="clearfix"></div>
             </div>
         </nav>
         <div id="main">
-            <div class="video-caption">
-                <h1>Capturing Your Best Moments</h1>
+            <h1 class="faq-title">Frequently Asked Questions</h1>
+            <div id="FAQ" class="Accordion">
+                <div class="AccordionPanel AccordionPanelClosed">
+                    <div class="AccordionPanelTab">
+                        How long does it take to fully edit the video?
+                    </div>
+                    <div class="AccordionPanelContent">
+                        It takes a month to fully edit the video. This may seem long but it ensures us the quality that we can give.
+                    </div>
+                </div>
+                <div class="AccordionPanel AccordionPanelClosed">
+
+                    <div class="AccordionPanelTab">
+                        Who picks the music?
+                    </div>
+                    <div class="AccordionPanelContent">
+                        We are the ones who pick the music. In this we can avoid copyright issues and we can ensure that the video will match the music.
+                    </div>
+                </div>
+                <div class="AccordionPanel AccordionPanelClosed">
+
+                    <div class="AccordionPanelTab">
+                        Do you accept offers outside the Philippines?
+                    </div>
+                    <div class="AccordionPanelContent">
+                        As of now we haven't done that but we are willing to provide service outside the country
+                    </div>
+                </div>
+                <div class="AccordionPanel AccordionPanelClosed">
+
+                    <div class="AccordionPanelTab">
+                        Are you afraid of not getting the right moment?
+                    </div>
+                    <div class="AccordionPanelContent">
+                        No we're not, we have men who will ensure that your event will be wholly covered.
+                    </div>
+                </div>
+                <div class="AccordionPanel AccordionPanelClosed">
+
+                    <div class="AccordionPanelTab">
+                        Why is it its only 15 mins?
+                    </div>
+                    <div class="AccordionPanelContent">
+                        It is not strictly 15 mins, it's just the average time we can tell. It all depends on what will happen on the event.
+                    </div>
+                </div>
+                <div class="AccordionPanel AccordionPanelClosed">
+
+                    <div class="AccordionPanelTab">
+                        What makes you different from other videographers and photographers?
+                    </div>
+                    <div class="AccordionPanelContent">
+                        I think it is that we treat our clients more like friends, and that gives you the assurance that we are doing our best.
+                    </div>
+                </div>
+                <div class="AccordionPanel AccordionPanelClosed">
+
+                    <div class="AccordionPanelTab">
+                        Do we have to provide the food?
+                    </div>
+                    <div class="AccordionPanelContent">
+                        It will be good if that will happen but we are ready if there will be none.
+                    </div>
+                </div>
+                <div class="AccordionPanel AccordionPanelClosed">
+
+                    <div class="AccordionPanelTab">
+                        What have you learned being in that industry for years?
+                    </div>
+                    <div class="AccordionPanelContent">
+                        We learn how to appreciate even the smallest detail of an event. We learned how to appreciate others moment and treasure them as ours. And we learn that if we do that, clients tend to be more vulnerable to us and would love to share they're moments with us.
+                    </div>
+                </div>
             </div>
-            <video autoplay class="full">
-              <source src="videos/index.webM" type="video/webM">
-              Your browser does not support the video tag.
-            </video>
         </div>
+
+        <script type="text/javascript"  src="../js/SpryAccordion.js"></script>
+        <script type="text/javascript">
+        var Accordion1 = new Spry.Widget.Accordion("FAQ");
+        </script>
     </body>
 </html>

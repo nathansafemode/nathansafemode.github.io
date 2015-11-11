@@ -2,27 +2,73 @@
     <head>
         <title>THATMOMENT - Media</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/stylesheet.css">
+
     </head>
-    <body>
-        <nav>
+    <body  class="media-page">
+        <nav class="top">
+            <a href="../index.html" title="THATMOMENT" class="brand"><span>THAT</span>MOMENT</a>
+        </nav>
+        <nav class="bottom">
             <div>
                 <a href="../index.html" title="Home">Home</a>
                 <a href="about.html" title="About">About</a>
                 <a href="gallery.html" title="Gallery">Gallery</a>
-                <a href="media.html" title="Media">Media</a>
+                <a href="media.html" class="active" title="Media">Media</a>
                 <a href="faq.html" title="FAQ">FAQ</a>
                 <a href="contact.html" title="Contact">Contact</a>            
                 <div class="clearfix"></div>
             </div>
         </nav>
         <div id="main">
-            <div class="video-caption">
-                <h1>Capturing Your Best Moments</h1>
-            </div>
-            <video autoplay class="full">
-              <source src="videos/index.webM" type="video/webM">
-              Your browser does not support the video tag.
-            </video>
+            <ul class="media videos">
+                <li><iframe src="https://www.youtube.com/embed/U0yol0Yn4lU" frameborder="0" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/_m8I5GeynLM" frameborder="0" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/-4SP0dF9XJw" frameborder="0" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/K1FzK5JxJmg" frameborder="0" allowfullscreen></iframe></li>
+            </ul>
+            <ul class="media audio">
+                <li>
+                    <img class="album-art" src="../images/albumart/1.jpg">
+                    <audio controls>
+                        <source src="../audio/1.mp3">  
+                    </audio>
+                </li>
+                <li>
+                    <img class="album-art" src="../images/albumart/2.jpg">
+                    <audio controls>
+                        <source src="../audio/2.mp3">  
+                    </audio>
+                </li>
+                <li>
+                    <img class="album-art" src="../images/albumart/3.jpg">
+
+                    <audio controls>
+                        <source src="../audio/3.mp3">  
+                    </audio>
+                </li>
+                <li>
+                    <img class="album-art" src="../images/albumart/4.jpg">
+
+                    <audio controls>
+                        <source src="../audio/4.mp3">  
+                    </audio>
+                </li>
+                <li>
+                    <img class="album-art" src="../images/albumart/5.jpg">
+
+                    <audio controls>
+                        <source src="../audio/5.mp3">  
+                    </audio>
+                </li>
+                <li>
+                    <img class="album-art" src="../images/albumart/6.jpg">
+
+                    <audio controls>
+                        <source src="../audio/6.mp3">  
+                    </audio>
+                </li>
+            </ul>
         </div>
     </body>
 </html>
