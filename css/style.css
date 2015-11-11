@@ -1,0 +1,57 @@
+body {
+	margin: 0;
+}
+
+.clearfix {
+	content: " ";
+	clear: both;
+}
+
+nav {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	z-index: 1;
+}
+
+nav > div {
+	max-width: 90%;
+	padding: 5px 15px;
+	margin: 11px auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	float: left;
+	min-width: 15%;
+	text-align: center;
+	line-height: 22px;
+	font-size: 15px;
+}
+
+#main video.full {
+	width: 100%;
+}
+
+.video-caption {
+	position: absolute;
+	margin: auto;
+	height: 60px;
+	width: 1000px;
+	text-align: center;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.video-caption h1{
+	text-transform: uppercase;
+}
